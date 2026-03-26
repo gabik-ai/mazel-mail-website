@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum | Mazel Mail</title>
+    
+    <!-- Robots: Impressum nicht indexieren -->
+    <meta name="robots" content="noindex, follow" /> 
+
+    <!-- 1. FAVICON -->
+    <link rel="icon" type="image/png" href="./images/favicon-512.png">
+    <link rel="apple-touch-icon" href="./images/favicon-512.png">
+
+    <!-- 2. PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 3. FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- 4. DEIN STYLE (Enthält jetzt Tailwind Core + Custom Styles) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 5. ICONS (Falls benötigt) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
+    
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 pointer-events-none" id="main-header">
+        <div class="header-blur pointer-events-auto mx-auto w-full transition-all duration-500 flex flex-col justify-center" id="header-container">
+            <div class="header-content px-4 sm:px-6 lg:px-8 w-full mx-auto max-w-7xl flex justify-between items-center">
+                <div class="flex-shrink-0">
+                    <a href='/'>
+                        <img src="./images/mazel-mail-logo-header.webp" alt="Mazel Mail Logo" width="1280" height="306" class="logo">
+                    </a>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a class='nav-link' href='/#results-dashboard'>Ergebnisse</a>
+                    <a class='nav-link' href='/#deliverables'>Das System</a>
+                    <a class='nav-link' href='/#about'>Über uns</a>
+                    <a class='nav-link' href='/#pricing'>Preise</a>
+                    <a class='nav-link' href='/#faq'>FAQ</a>
+                </nav>
+
+                <div class="desktop-cta">
+                    <a class='header-cta' href='/#pricing'>Potenzial-Check buchen</a>
+                </div>
+
+                <div class="mobile-menu-toggle">
+                    <button id="mobile-menu-button" class="flex items-center justify-center w-10 h-10 focus:outline-none" aria-label="Menü öffnen">
+                        <div class="hamburger"><span></span><span></span></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu block lg:hidden pointer-events-auto" aria-hidden="true">
+            <div class="px-4 pt-2 w-full">
+                <a class='mobile-nav-link' href='/#results-dashboard'>Ergebnisse</a>
+                <a class='mobile-nav-link' href='/#deliverables'>Das System</a>
+                <a class='mobile-nav-link' href='/#about'>Über uns</a>
+                <a class='mobile-nav-link' href='/#pricing'>Preise</a>
+                <a class='mobile-nav-link' href='/#faq'>FAQ</a>
+            </div>
+            <div class="mt-auto px-4 pb-12 w-full pt-8">
+                <a class='w-full cta-button text-white shadow-lg py-4 text-[16px] text-center block' href='/#pricing'>
+                    Potenzial-Check buchen
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="flex-grow pt-32 lg:pt-48 pb-20 lg:pb-32 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            
+            <div class="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.06)] border border-gray-100">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-10 tracking-tight font-['Quicksand']">Impressum</h1>
+
+                <div class="space-y-10">
+                    
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">Angaben gemäß § 5 TMG</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Hanna Feldmann<br>Mazel Mail<br>Potsdamer Str. 86<br>10785 Berlin
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">Kontakt</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            E-Mail: <a href="mailto:hanna@mazelmail.de" class="text-purple-600 hover:text-purple-700 font-medium transition-colors">hanna@mazelmail.de</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">Umsatzsteuer-ID gemäß § 27a UStG</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Umsatzsteuer-ID: DE369818789
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Hanna Feldmann<br>Potsdamer Str. 86<br>10785 Berlin
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">Streitschlichtung</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-4">
+                            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 font-medium transition-colors break-all">https://ec.europa.eu/consumers/odr/</a>.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 lg:py-20 mt-auto">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+                
+                <div class="lg:col-span-2">
+                    <div class="mb-6">
+                        <a class='inline-block' href='/'>
+                            <img src="./images/mazel-mail-logo-footer.webp" alt="Mazel Mail Logo" width="1280" height="306" class="h-10 w-auto object-contain">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-[15px] leading-relaxed max-w-md mb-10">
+                        Das E-Mail-System für Shopify Brands. <br>Einmal aufgebaut, für immer deins.
+                    </p>
+                    <div class="group cursor-default">
+                        <div class="flex items-center space-x-2.5 mb-1.5">
+                            <div class="relative flex-shrink-0 w-5 h-5">
+                                <div class="absolute inset-0 bg-purple-600 blur-[2px] opacity-10 group-hover:opacity-40 transition-opacity duration-500 rounded-full"></div>
+                                <svg class="relative w-full h-full text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase mt-0.5">HQ Berlin</span>
+                        </div>
+                        <address class="not-italic text-[14px] text-gray-500 leading-relaxed font-normal ml-[30px]">
+                            Potsdamer Str. 86<br>10785 Berlin
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-medium text-white mb-5 font-['Quicksand'] tracking-wide">Navigation</h4>
+                    <ul class="space-y-3">
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#results-dashboard'>Ergebnisse</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#deliverables'>Das System</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#pricing'>Preise</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#about'>Über uns</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#faq'>FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-medium text-white mb-5 font-['Quicksand'] tracking-wide">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a class='text-white transition-colors duration-200 text-sm' href='/impressum'>Impressum</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/datenschutz'>Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-600 text-sm">
+                    © 2026 Mazel Mail. Alle Rechte vorbehalten.
+                </div>
+                <div class="text-gray-600 text-sm flex items-center gap-2">
+                    E-Mail Marketing für Shopify
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Header Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('.header-blur');
+            const mainHeader = document.getElementById('main-header');
+            
+            // Header Scroll
+            window.addEventListener('scroll', () => {
+                const scrolled = window.scrollY > 50;
+                if (header) header.classList.toggle('scrolled', scrolled);
+                if (mainHeader) mainHeader.classList.toggle('scrolled', scrolled);
+            }, { passive: true });
+
+            // Mobile Menu
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburger = document.querySelector('.hamburger');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isOpen = mobileMenu.classList.contains('open');
+                    mobileMenu.classList.toggle('open', !isOpen);
+                    if (hamburger) hamburger.classList.toggle('active', !isOpen);
+                    document.body.style.overflow = isOpen ? '' : 'hidden';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

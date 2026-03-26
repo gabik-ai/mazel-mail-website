@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenschutz | Mazel Mail</title>
+    
+    <!-- Robots: Datenschutz nicht indexieren -->
+    <meta name="robots" content="noindex, follow" /> 
+
+    <!-- 1. FAVICON -->
+    <link rel="icon" type="image/png" href="./images/favicon-512.png">
+    <link rel="apple-touch-icon" href="./images/favicon-512.png">
+
+    <!-- 2. PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 3. FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- 4. DEIN STYLE (Tailwind Core + Custom + Legal Fixes) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 5. ICONS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
+    
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 pointer-events-none" id="main-header">
+        <div class="header-blur pointer-events-auto mx-auto w-full transition-all duration-500 flex flex-col justify-center" id="header-container">
+            <div class="header-content px-4 sm:px-6 lg:px-8 w-full mx-auto max-w-7xl flex justify-between items-center">
+                <div class="flex-shrink-0">
+                    <a href='/'>
+                        <img src="./images/mazel-mail-logo-header.webp" alt="Mazel Mail Logo" width="1280" height="306" class="logo">
+                    </a>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a class='nav-link' href='/#results-dashboard'>Ergebnisse</a>
+                    <a class='nav-link' href='/#deliverables'>Das System</a>
+                    <a class='nav-link' href='/#about'>Über uns</a>
+                    <a class='nav-link' href='/#pricing'>Preise</a>
+                    <a class='nav-link' href='/#faq'>FAQ</a>
+                </nav>
+
+                <div class="desktop-cta">
+                    <a class='header-cta' href='/#pricing'>Potenzial-Check buchen</a>
+                </div>
+
+                <div class="mobile-menu-toggle">
+                    <button id="mobile-menu-button" class="flex items-center justify-center w-10 h-10 focus:outline-none" aria-label="Menü öffnen">
+                        <div class="hamburger"><span></span><span></span></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu block lg:hidden pointer-events-auto" aria-hidden="true">
+            <div class="px-4 pt-2 w-full">
+                <a class='mobile-nav-link' href='/#results-dashboard'>Ergebnisse</a>
+                <a class='mobile-nav-link' href='/#deliverables'>Das System</a>
+                <a class='mobile-nav-link' href='/#about'>Über uns</a>
+                <a class='mobile-nav-link' href='/#pricing'>Preise</a>
+                <a class='mobile-nav-link' href='/#faq'>FAQ</a>
+            </div>
+            <div class="mt-auto px-4 pb-12 w-full pt-8">
+                <a class='w-full cta-button text-white shadow-lg py-4 text-[16px] text-center block' href='/#pricing'>
+                    Potenzial-Check buchen
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="flex-grow pt-32 lg:pt-48 pb-20 lg:pb-32 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- 
+               Box Styling:
+               - bg-white: Weißer Hintergrund
+               - legal-box-shadow: Dein Custom Schatten aus style.css
+               - rounded-3xl: Runde Ecken
+            -->
+            <div class="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 legal-box-shadow border border-gray-100">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-10 tracking-tight font-['Quicksand']">Datenschutzerklärung</h1>
+
+                <!-- 'legal-content' aktiviert die Typografie-Regeln aus deiner style.css -->
+                <div class="space-y-10 legal-content">
+                    
+                    <!-- 1. Verantwortlicher -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">1. Verantwortlicher</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Hanna Feldmann<br>Mazel Mail<br>Potsdamer Str. 86<br>10785 Berlin<br>
+                            E-Mail: <a href="mailto:hanna@mazelmail.de" class="text-purple-600 hover:text-purple-700 font-medium transition-colors">hanna@mazelmail.de</a>
+                        </p>
+                    </div>
+
+                    <!-- 2. Hosting -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">2. Hosting</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-4">
+                            Diese Website wird über Netlify, Inc. (44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA) gehostet. Beim Aufrufen der Website werden automatisch Informationen in sogenannten Server-Log-Dateien gespeichert, die Ihr Browser automatisch übermittelt. Dazu gehören: IP-Adresse, Browsertyp und -version, Betriebssystem, Referrer-URL, aufgerufene Seite, Datum und Uhrzeit des Zugriffs.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-4">
+                            Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem stabilen und sicheren Websitebetrieb). Netlify verarbeitet Daten unter Umständen in den USA. Die Datenübertragung erfolgt auf Grundlage der EU-Standardvertragsklauseln.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Weitere Informationen finden Sie in der Datenschutzerklärung von Netlify: 
+                            <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 font-medium transition-colors break-all">https://www.netlify.com/privacy/</a>
+                        </p>
+                    </div>
+
+                    <!-- 3. Externe Ressourcen (CDN) -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">3. Externe Ressourcen (CDN)</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-6">
+                            Diese Website nutzt externe Ressourcen, die über Content Delivery Networks (CDN) eingebunden werden. Beim Aufrufen der Website stellt Ihr Browser Verbindungen zu den Servern dieser Anbieter her, wobei Ihre IP-Adresse übermittelt wird. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer einheitlichen und optimierten Darstellung der Website).
+                        </p>
+                        
+                        <div class="mb-5">
+                            <h3 class="text-[17px] font-semibold text-gray-900 mb-2 font-['Quicksand']">jsDelivr (Tailwind CSS, Font Awesome)</h3>
+                            <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                                Diese Website nutzt das CDN jsDelivr zur Einbindung des CSS-Frameworks Tailwind CSS sowie der Icon-Bibliothek Font Awesome. Betreiber ist Prospect One Sp. z o.o., Polen. Weitere Informationen: 
+                                <a href="https://www.jsdelivr.com/privacy-policy-jsdelivr" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 font-medium transition-colors break-all">https://www.jsdelivr.com/privacy-policy-jsdelivr</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-[17px] font-semibold text-gray-900 mb-2 font-['Quicksand']">Google Fonts</h3>
+                            <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                                Diese Website nutzt Schriftarten von Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Beim Aufrufen der Website stellt Ihr Browser eine Verbindung zu Servern von Google her, wobei Ihre IP-Adresse an Google übermittelt wird. Die Datenübertragung in die USA erfolgt auf Grundlage der EU-Standardvertragsklauseln. Weitere Informationen: 
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 font-medium transition-colors break-all">https://policies.google.com/privacy</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Terminbuchung über Zeeg -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">4. Terminbuchung über Zeeg</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-4">
+                            Für die Buchung von Beratungsterminen nutzen wir den Dienst Zeeg (Zeeg GmbH, Deutschland). Wenn Sie einen Termin buchen, werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, gewählter Termin sowie optionale Angaben) an Zeeg übermittelt und dort verarbeitet. Zeeg speichert alle Daten auf Servern in Deutschland und ist vollständig DSGVO-konform.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Durchführung vorvertraglicher Maßnahmen auf Anfrage der betroffenen Person). Weitere Informationen: 
+                            <a href="https://zeeg.me/en/privacy" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 font-medium transition-colors break-all">https://zeeg.me/en/privacy</a>
+                        </p>
+                    </div>
+
+                    <!-- 5. Cookies und Tracking -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">5. Cookies und Tracking</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Diese Website verwendet keine Cookies und setzt keine Tracking- oder Analyse-Tools ein.
+                        </p>
+                    </div>
+
+                    <!-- 6. Kontaktaufnahme -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">6. Kontaktaufnahme</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage verarbeitet. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).
+                        </p>
+                    </div>
+
+                    <!-- 7. Ihre Rechte -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">7. Ihre Rechte</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-4">
+                            Sie haben jederzeit das Recht auf Auskunft über die bei uns gespeicherten personenbezogenen Daten (Art. 15 DSGVO), Berichtigung unrichtiger Daten (Art. 16 DSGVO), Löschung Ihrer Daten (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) und Widerspruch gegen die Verarbeitung (Art. 21 DSGVO).
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">
+                            Zur Ausübung Ihrer Rechte wenden Sie sich an: <a href="mailto:hanna@mazelmail.de" class="text-purple-600 hover:text-purple-700 font-medium transition-colors">hanna@mazelmail.de</a>
+                        </p>
+                    </div>
+
+                    <!-- 8. Beschwerderecht -->
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 font-['Quicksand']">8. Beschwerderecht</h2>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base mb-4">
+                            Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren. Die für uns zuständige Aufsichtsbehörde ist:
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-[15px] sm:text-base">Berliner Beauftragte für Datenschutz und Informationsfreiheit<br>Friedrichstr. 219<br>10969 Berlin<br><a href="https://www.datenschutz-berlin.de" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 font-medium transition-colors break-all">https://www.datenschutz-berlin.de</a></p>
+                    </div>
+
+                    <!-- 9. Aktualität -->
+                    <div class="pt-4 border-t border-gray-100">
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 font-['Quicksand']">9. Aktualität</h2>
+                        <p class="text-gray-500 font-medium text-sm">
+                            Stand: Februar 2026
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 lg:py-20 mt-auto">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+                
+                <div class="lg:col-span-2">
+                    <div class="mb-6">
+                        <a class='inline-block' href='/'>
+                            <img src="./images/mazel-mail-logo-footer.webp" alt="Mazel Mail Logo" width="1280" height="306" class="h-10 w-auto object-contain">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-[15px] leading-relaxed max-w-md mb-10">
+                        Das E-Mail-System für Shopify Brands. <br>Einmal aufgebaut, für immer deins.
+                    </p>
+                    <div class="group cursor-default">
+                        <span class="text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase mt-0.5">HQ Berlin</span>
+                        <address class="not-italic text-[14px] text-gray-500 leading-relaxed font-normal ml-[30px]">
+                            Potsdamer Str. 86<br>10785 Berlin
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-medium text-white mb-5 font-['Quicksand'] tracking-wide">Navigation</h4>
+                    <ul class="space-y-3">
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#results-dashboard'>Ergebnisse</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#deliverables'>Das System</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#pricing'>Preise</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#about'>Über uns</a></li>
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/#faq'>FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-medium text-white mb-5 font-['Quicksand'] tracking-wide">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a class='text-gray-400 hover:text-white transition-colors duration-200 text-sm' href='/impressum'>Impressum</a></li>
+                        <li><a class='text-white transition-colors duration-200 text-sm' href='/datenschutz'>Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-600 text-sm">
+                    © 2026 Mazel Mail. Alle Rechte vorbehalten.
+                </div>
+                <div class="text-gray-600 text-sm flex items-center gap-2">
+                    E-Mail Marketing für Shopify
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburger = document.querySelector('.hamburger');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isOpen = mobileMenu.classList.contains('open');
+                    mobileMenu.classList.toggle('open', !isOpen);
+                    if (hamburger) hamburger.classList.toggle('active', !isOpen);
+                    document.body.style.overflow = isOpen ? '' : 'hidden';
+                });
+            }
+            
+            const header = document.querySelector('.header-blur');
+            const mainHeader = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                const scrolled = window.scrollY > 50;
+                if(header) header.classList.toggle('scrolled', scrolled);
+                if(mainHeader) mainHeader.classList.toggle('scrolled', scrolled);
+            });
+        });
+    </script>
+</body>
+</html>
